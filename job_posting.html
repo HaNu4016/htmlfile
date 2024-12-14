@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadmax CNC Machine Training Application Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            padding: 20px;
+        }
+
+        .form-container {
+            background: #ffffff;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 800px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        h1 {
+            color: #4A90E2;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        h2 {
+            margin-top: 1.5rem;
+            font-size: 1.4rem;
+            color: #4A90E2;
+        }
+
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1rem;
+            transition: 0.3s;
+        }
+
+        input:hover, select:hover, textarea:hover {
+            border-color: #4A90E2;
+        }
+
+        button {
+            width: 100%;
+            padding: 0.8rem;
+            background: #4A90E2;
+            color: #ffffff;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 1rem;
+        }
+
+        button:hover {
+            background: #357ABD;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .form-container {
+                padding: 3rem;
+                max-width: 900px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Cadmax CNC Training Application</h1>
+        <form>
+            <!-- Personal Information -->
+            <div class="form-group">
+                <label>Full Name</label>
+                <input type="text" required>
+            </div>
+            <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" required>
+            </div>
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" required>
+            </div>
+            <div class="form-group">
+                <label>Date of Birth</label>
+                <input type="date" required>
+            </div>
+
+            <!-- Course Selection -->
+            <h2>Course Selection</h2>
+            <div class="form-group">
+                <label>Training Program Applied For</label>
+                <select required>
+                    <option value="CNC Basics">CNC Basics</option>
+                    <option value="CNC Advanced">CNC Advanced</option>
+                    <option value="CAD/CAM Basics">CAD/CAM Basics</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Preferred Batch Timing</label>
+                <select required>
+                    <option value="Morning">Morning</option>
+                    <option value="Afternoon">Afternoon</option>
+                    <option value="Evening">Evening</option>
+                </select>
+            </div>
+
+            <!-- Educational Background -->
+            <h2>Educational Background</h2>
+            <div class="form-group">
+                <label>Highest Qualification</label>
+                <select required>
+                    <option value="10th">10th</option>
+                    <option value="12th">12th</option>
+                    <option value="Diploma">Diploma</option>
+                    <option value="Bachelor's">Bachelor's</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Field of Study</label>
+                <select required>
+                    <option value="Engineering">Engineering</option>
+                    <option value="ITI">ITI</option>
+                    <option value="Polytechnic">Polytechnic</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Year of Graduation</label>
+                <input type="number" min="1900" max="2099" required>
+            </div>
+            <div class="form-group">
+                <label>Percentage/CGPA</label>
+                <input type="text" required>
+            </div>
+
+            <!-- Technical Skills -->
+            <h2>Technical Skills</h2>
+            <div class="form-group">
+                <label>Related Skills</label>
+                <select required>
+                    <option value="CNC Programming">CNC Programming</option>
+                    <option value="CAD/CAM Basics">CAD/CAM Basics</option>
+                    <option value="Blueprint Reading">Blueprint Reading</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Software Knowledge</label>
+                <select multiple required>
+                    <option value="AutoCAD">AutoCAD</option>
+                    <option value="SolidWorks">SolidWorks</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Certifications (If Any)</label>
+                <input type="text">
+            </div>
+
+            <!-- Training Objectives -->
+            <h2>Training Objectives</h2>
+            <div class="form-group">
+                <label>Why Are You Interested in CNC Training?</label>
+                <textarea required></textarea>
+            </div>
+            <div class="form-group">
+                <label>Career Goals After CNC Training</label>
+                <textarea></textarea>
+            </div>
+
+            <!-- Experience -->
+            <h2>Experience</h2>
+            <div class="form-group">
+                <label>Previous Work Experience</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Industry Exposure</label>
+                <select required>
+                    <option value="Manufacturing">Manufacturing</option>
+                    <option value="Automotive">Automotive</option>
+                    <option value="Tool & Die">Tool & Die</option>
+                </select>
+            </div>
+
+            <!-- References -->
+            <h2>References (Optional)</h2>
+            <div class="form-group">
+                <label>Reference Name</label>
+                <input type="text">
+            </div>
+            <div class="form-group">
+                <label>Reference Contact Information</label>
+                <input type="tel">
+            </div>
+
+            <!-- Additional Information -->
+            <h2>Additional Information</h2>
+            <div class="form-group">
+                <label>How Did You Hear About Cadmax?</label>
+                <select required>
+                    <option value="Social Media">Social Media</option>
+                    <option value="Friend/Referral">Friend/Referral</option>
+                    <option value="Website">Website</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Upload Resume</label>
+                <input type="file">
+            </div>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
