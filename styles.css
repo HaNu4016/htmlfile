@@ -1,0 +1,220 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #3e4042;
+    padding: 10px;
+}
+
+
+.logo {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.logo img {
+    width: 100%; /* Image ko logo ke container ke size ke according fit karega */
+    height: auto; /* Image ka height automatically adjust hoga */
+}
+
+.navbar-title {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links .btn {
+    margin-left: 20px;
+}
+
+.hero-section {
+    background: url('hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 600px;
+    margin: auto;
+}
+
+.hero-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.about-us {
+    text-align: center;
+}
+
+.vernier-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.vernier-content {
+    flex: 1;
+}
+
+.vernier-img-container {
+    flex: 1;
+    text-align: right;
+}
+
+.vernier-img {
+    max-width: 100%;
+    height: auto;
+}
+.registration-section {
+    display: flex;
+    justify-content: space-between; /* Items ko left aur right ke beech distribute karega */
+    text-align: center;
+    margin: 40px 0;
+}
+
+.registration-container {
+    padding: 40px; /* Yahan aap padding badha sakte hain */
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px; /* Corner rounded */
+    margin: 20px; /* Uniform margin for both containers */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    flex: 1; /* Dono registration sections ko barabar space dene ke liye */
+    max-width: 400px; /* Maximum width set karna */
+}
+
+.registration-container h2 {
+    font-size: 2.5em; /* Size of the heading */
+}
+
+.registration-container p {
+    font-size: 1.2em; /* Size of the paragraph text */
+}
+
+.enroll-button, .register-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em; /* Button text size */
+}
+
+
+/* Team section */
+.team-rectangle {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+}
+
+.team-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.founder-img {
+    width: 120px;
+    height: 120px;
+}
+footer {
+    background-color: #343a40; /* Dark gray background for the footer */
+    color: white; /* Text color */
+    padding: 30px; /* Padding around footer */
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    justify-content: space-between; /* Distributes space evenly */
+    max-width: 1200px; /* Maximum width for large screens */
+    margin: 0 auto; /* Centering the footer content */
+}
+
+.footer-content div {
+    flex: 1 1 250px; /* Flex grow, shrink and basis for responsive behavior */
+    margin: 10px; /* Space between sections */
+}
+
+.footer-content h4 {
+    margin-bottom: 10px; /* Space below headings */
+    font-size: 1.5em; /* Larger font size for headings */
+}
+
+.footer-content ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+.footer-content a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
+    display: block; /* Block display for better click area */
+    padding: 5px 0; /* Padding for links */
+    transition: color 0.3s; /* Smooth color change */
+}
+
+.footer-content a:hover {
+    color: #007bff; /* Change link color on hover */
+}
+
+.social-media {
+    display: flex; /* Flex for icons */
+    align-items: center; /* Center align icons vertically */
+}
+
+.social-icon {
+    margin: 0 10px; /* Space between icons */
+    font-size: 1.5em; /* Size of the icons */
+    color: white; /* Icon color */
+    transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.social-icon:hover {
+    transform: scale(1.2); /* Slightly enlarge on hover */
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em; /* Smaller font size */
+}
